@@ -1,4 +1,4 @@
-import logopic from '../../logo.png';
+import logopic from '../utils/logo.png'
 
 const Header = () => {
     return (

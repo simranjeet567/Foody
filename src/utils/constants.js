@@ -1,8 +1,8 @@
-const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
+export const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
 
 
 //this is a hard-coded restaurants data.
-const restaurantArray = [
+export const restaurantArray = [
     {
        "id": "10576",
        "name": "Pizza Hut",
@@ -1761,4 +1761,6 @@ const restaurantArray = [
 
 ];
 
-export default restaurantArray;
+
+
+// export default restaurantArray;

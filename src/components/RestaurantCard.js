@@ -1,3 +1,5 @@
+import { CDN_URL } from "../utils/constants";
+
 //this is a JS object:
 const styleCard = {
     background: "#FF964F"
@@ -10,7 +12,7 @@ const RestaurantCard = (props) => {
     //we have used here the inline style of CSS.
     return (
         <div className='res-card' style={styleCard}>
-           <img className='res-logo' src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+resData.cloudinaryImageId} alt="restaurant image"/>
+           <img className='res-logo' src={CDN_URL+resData.cloudinaryImageId} alt="restaurant image"/>
            <h3>{resData.name}</h3>
            <h3>{resData.locality}</h3>
            <h3>{resData.areaName}</h3>
