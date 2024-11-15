@@ -1,0 +1,56 @@
+.header {
+  border: 1px solid orange;
+  justify-content: space-between;
+  display: flex;
+}
+
+.logo {
+  cursor: pointer;
+  width: 100px;
+  padding-left: 50px;
+}
+
+.nav-items > ul {
+  padding-right: 50px;
+  font-size: 18px;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > ul > li {
+  margin: 10px;
+  padding: 10px;
+}
+
+.home:hover, .aboutus:hover, .contactus:hover, .cart:hover {
+  cursor: pointer;
+  border: 1px solid orange;
+}
+
+.res-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.res-card {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 250px;
+  margin: 20px;
+  padding: 5px;
+}
+
+.res-card:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.search {
+  padding: 10px;
+}
+
+.res-logo {
+  width: 100%;
+  height: 40%;
+}
+/*# sourceMappingURL=index.9e4c6fd2.css.map */
