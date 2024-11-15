@@ -2942,1634 +2942,45 @@ var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 var _header = require("./components/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
-//this is a JS object:
-const styleCard = {
-    background: "#FF964F"
-};
-const RestaurantCard = (props)=>{
-    const { resData } = props;
-    //we have used here the inline style of CSS.
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "res-card",
-        style: styleCard,
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "res-logo",
-                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + resData.cloudinaryImageId,
-                alt: "restaurant image"
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 20,
-                columnNumber: 12
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: resData.name
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 21,
-                columnNumber: 12
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: resData.locality
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 22,
-                columnNumber: 12
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: resData.areaName
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 23,
-                columnNumber: 12
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: resData.cuisines.join(", ")
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 24,
-                columnNumber: 12
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: [
-                    resData.avgRating,
-                    " stars"
-                ]
-            }, void 0, true, {
-                fileName: "src/App.js",
-                lineNumber: 25,
-                columnNumber: 12
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: resData.costForTwo.split(" ")[0]
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 26,
-                columnNumber: 12
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: [
-                    resData.sla.deliveryTime,
-                    " minutes"
-                ]
-            }, void 0, true, {
-                fileName: "src/App.js",
-                lineNumber: 27,
-                columnNumber: 12
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/App.js",
-        lineNumber: 19,
-        columnNumber: 9
-    }, undefined);
-};
-_c = RestaurantCard;
-const restaurantArray = [
-    {
-        "id": "10576",
-        "name": "Pizza Hut",
-        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/7/16/87e56c63-b521-4257-96ae-a42229b92009_10576.jpg",
-        "locality": "6th Block",
-        "areaName": "Koramangala",
-        "costForTwo": "\u20B9350 for two",
-        "cuisines": [
-            "Pizzas"
-        ],
-        "avgRating": 4.2,
-        "parentId": "721",
-        "avgRatingString": "4.2",
-        "totalRatingsString": "21K+",
-        "sla": {
-            "deliveryTime": 47,
-            "lastMileTravel": 0.7,
-            "serviceability": "SERVICEABLE",
-            "slaString": "45-50 mins",
-            "lastMileTravelString": "0.7 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-16 04:00:00",
-            "opened": true
-        },
-        "badges": {},
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {},
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "ITEMS",
-            "subHeader": "AT \u20B9189"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "4.6",
-                "ratingCount": "3.1K+"
-            },
-            "source": "GOOGLE",
-            "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "671928",
-        "name": "KFC",
-        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/5/a64ce30a-7492-444b-a485-1b7e2804e091_671928.JPG",
-        "locality": "7th Block",
-        "areaName": "Koramangla",
-        "costForTwo": "\u20B9400 for two",
-        "cuisines": [
-            "Burgers",
-            "Fast Food",
-            "Rolls & Wraps"
-        ],
-        "avgRating": 4.3,
-        "parentId": "547",
-        "avgRatingString": "4.3",
-        "totalRatingsString": "3.3K+",
-        "sla": {
-            "deliveryTime": 29,
-            "lastMileTravel": 1.2,
-            "serviceability": "SERVICEABLE",
-            "slaString": "25-30 mins",
-            "lastMileTravelString": "1.2 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-16 02:00:00",
-            "opened": true
-        },
-        "badges": {},
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {},
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "40% OFF",
-            "subHeader": "UPTO \u20B980"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "--"
-            }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "23786",
-        "name": "Domino's Pizza",
-        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/10/24/3e8d32e5-040b-4def-8d6e-88270f3ce792_23786.JPG",
-        "locality": "4th Block",
-        "areaName": "Koramangala",
-        "costForTwo": "\u20B9400 for two",
-        "cuisines": [
-            "Pizzas",
-            "Italian",
-            "Pastas",
-            "Desserts"
-        ],
-        "avgRating": 4.4,
-        "parentId": "2456",
-        "avgRatingString": "4.4",
-        "totalRatingsString": "19K+",
-        "sla": {
-            "deliveryTime": 25,
-            "lastMileTravel": 1.5,
-            "serviceability": "SERVICEABLE",
-            "slaString": "20-25 mins",
-            "lastMileTravelString": "1.5 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-16 02:55:00",
-            "opened": true
-        },
-        "badges": {
-            "imageBadges": [
-                {
-                    "imageId": "Rxawards/_CATEGORY-Pizza.png",
-                    "description": "Delivery!"
-                }
-            ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {
-                    "badgeObject": [
-                        {
-                            "attributes": {
-                                "description": "Delivery!",
-                                "imageId": "Rxawards/_CATEGORY-Pizza.png"
-                            }
-                        }
-                    ]
-                },
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "\u20B9175 OFF",
-            "subHeader": "ABOVE \u20B9999",
-            "discountTag": "FLAT DEAL"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "3.4",
-                "ratingCount": "287"
-            },
-            "source": "GOOGLE",
-            "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "63007",
-        "name": "LunchBox - Meals and Thalis",
-        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/10/16/5582708f-8e35-4321-9f03-54133a59be37_63007.jpg",
-        "locality": "Jakkasandra",
-        "areaName": "Hsr Layout 5th Sector",
-        "costForTwo": "\u20B9200 for two",
-        "cuisines": [
-            "Biryani",
-            "North Indian",
-            "Punjabi",
-            "Healthy Food",
-            "Desserts",
-            "Beverages"
-        ],
-        "avgRating": 4.4,
-        "parentId": "4925",
-        "avgRatingString": "4.4",
-        "totalRatingsString": "8.1K+",
-        "sla": {
-            "deliveryTime": 35,
-            "lastMileTravel": 2.2,
-            "serviceability": "SERVICEABLE",
-            "slaString": "30-35 mins",
-            "lastMileTravelString": "2.2 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-15 23:59:00",
-            "opened": true
-        },
-        "badges": {
-            "textExtendedBadges": [
-                {
-                    "iconId": "guiltfree/GF_Logo_android_3x",
-                    "shortDescription": "options available",
-                    "fontColor": "#7E808C"
-                }
-            ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {},
-                "textBased": {},
-                "textExtendedBadges": {
-                    "badgeObject": [
-                        {
-                            "attributes": {
-                                "description": "",
-                                "fontColor": "#7E808C",
-                                "iconId": "guiltfree/GF_Logo_android_3x",
-                                "shortDescription": "options available"
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "ITEMS",
-            "subHeader": "AT \u20B9159"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "--"
-            }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "23678",
-        "name": "McDonald's",
-        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/9/18/edc568f6-6813-4f2d-a670-911788f1f04f_23678.jpg",
-        "locality": "5th Block",
-        "areaName": "Koramangala",
-        "costForTwo": "\u20B9400 for two",
-        "cuisines": [
-            "Burgers",
-            "Beverages",
-            "Cafe",
-            "Desserts"
-        ],
-        "avgRating": 4.5,
-        "parentId": "630",
-        "avgRatingString": "4.5",
-        "totalRatingsString": "63K+",
-        "sla": {
-            "deliveryTime": 32,
-            "lastMileTravel": 1.2,
-            "serviceability": "SERVICEABLE",
-            "slaString": "30-35 mins",
-            "lastMileTravelString": "1.2 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-16 02:55:00",
-            "opened": true
-        },
-        "badges": {
-            "imageBadges": [
-                {
-                    "imageId": "Rxawards/_CATEGORY-Burger.png",
-                    "description": "Delivery!"
-                }
-            ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {
-                    "badgeObject": [
-                        {
-                            "attributes": {
-                                "description": "Delivery!",
-                                "imageId": "Rxawards/_CATEGORY-Burger.png"
-                            }
-                        }
-                    ]
-                },
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "ITEMS",
-            "subHeader": "AT \u20B9199"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "--"
-            }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "41913",
-        "name": "Chinita Real Mexican Food",
-        "cloudinaryImageId": "29fc772cc06b07a4b018e4971d96c9a3",
-        "locality": "Koramangala",
-        "areaName": "Koramangala",
-        "costForTwo": "\u20B9750 for two",
-        "cuisines": [
-            "Mexican",
-            "Salads",
-            "Desserts",
-            "Beverages"
-        ],
-        "avgRating": 4.6,
-        "parentId": "5064",
-        "avgRatingString": "4.6",
-        "totalRatingsString": "7.3K+",
-        "sla": {
-            "deliveryTime": 30,
-            "lastMileTravel": 0.4,
-            "serviceability": "SERVICEABLE",
-            "slaString": "25-30 mins",
-            "lastMileTravelString": "0.4 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-15 23:00:00",
-            "opened": true
-        },
-        "badges": {
-            "imageBadges": [
-                {
-                    "imageId": "newg.png",
-                    "description": "Gourmet"
-                }
-            ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {
-                    "badgeObject": [
-                        {
-                            "attributes": {
-                                "description": "Gourmet",
-                                "imageId": "newg.png"
-                            }
-                        }
-                    ]
-                },
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "50% OFF",
-            "subHeader": "UPTO \u20B9100"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "4.2",
-                "ratingCount": "2.1K+"
-            },
-            "source": "GOOGLE",
-            "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "158855",
-        "name": "Candice's Gourmet Sandwiches & Wraps",
-        "cloudinaryImageId": "d1331113564b015c9d55c48ff48a2553",
-        "locality": "5th Block",
-        "areaName": "Koramangala",
-        "costForTwo": "\u20B9600 for two",
-        "cuisines": [
-            "Salads",
-            "sandwich",
-            "Snacks"
-        ],
-        "avgRating": 4.6,
-        "parentId": "465403",
-        "avgRatingString": "4.6",
-        "totalRatingsString": "3.8K+",
-        "sla": {
-            "deliveryTime": 30,
-            "lastMileTravel": 0.4,
-            "serviceability": "SERVICEABLE",
-            "slaString": "30-35 mins",
-            "lastMileTravelString": "0.4 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-15 23:00:00",
-            "opened": true
-        },
-        "badges": {
-            "imageBadges": [
-                {
-                    "imageId": "newg.png",
-                    "description": "Gourmet"
-                }
-            ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {
-                    "badgeObject": [
-                        {
-                            "attributes": {
-                                "description": "Gourmet",
-                                "imageId": "newg.png"
-                            }
-                        }
-                    ]
-                },
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "60% OFF",
-            "subHeader": "UPTO \u20B9120"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "--"
-            }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "11211",
-        "name": "Taco Bell",
-        "cloudinaryImageId": "d3b3db238b6448c3f297c851e9d0b96b",
-        "locality": "Koramangala",
-        "areaName": "Koramangala",
-        "costForTwo": "\u20B9300 for two",
-        "cuisines": [
-            "Mexican",
-            "Fast Food",
-            "Snacks"
-        ],
-        "avgRating": 4.4,
-        "parentId": "1557",
-        "avgRatingString": "4.4",
-        "totalRatingsString": "25K+",
-        "sla": {
-            "deliveryTime": 28,
-            "lastMileTravel": 1.6,
-            "serviceability": "SERVICEABLE",
-            "slaString": "25-30 mins",
-            "lastMileTravelString": "1.6 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-16 01:00:00",
-            "opened": true
-        },
-        "badges": {},
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {},
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "ITEMS",
-            "subHeader": "AT \u20B9149"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "4.2",
-                "ratingCount": "5.8K+"
-            },
-            "source": "GOOGLE",
-            "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "50467",
-        "name": "Bakingo",
-        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/7/9c87f879-5296-41e2-b0de-0b47e88a4569_50467.JPG",
-        "locality": "1st Block",
-        "areaName": "Koramangala",
-        "costForTwo": "\u20B9300 for two",
-        "cuisines": [
-            "Bakery",
-            "Desserts",
-            "Beverages",
-            "Snacks"
-        ],
-        "avgRating": 4.5,
-        "parentId": "3818",
-        "avgRatingString": "4.5",
-        "totalRatingsString": "11K+",
-        "sla": {
-            "deliveryTime": 36,
-            "lastMileTravel": 2.7,
-            "serviceability": "SERVICEABLE",
-            "slaString": "35-40 mins",
-            "lastMileTravelString": "2.7 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-16 01:00:00",
-            "opened": true
-        },
-        "badges": {},
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {},
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "50% OFF",
-            "subHeader": "UPTO \u20B9100"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "--"
-            }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "718430",
-        "name": "The Pizza Bakery - Wood Fired Sourdough",
-        "cloudinaryImageId": "0335dd45be555d0a4187255e57d2ca88",
-        "locality": "BTM Layout",
-        "areaName": "Koramangala",
-        "costForTwo": "\u20B9700 for two",
-        "cuisines": [
-            "Pizzas",
-            "Pastas",
-            "Italian",
-            "Desserts",
-            "Continental",
-            "Beverages"
-        ],
-        "avgRating": 4.4,
-        "parentId": "522292",
-        "avgRatingString": "4.4",
-        "totalRatingsString": "1.7K+",
-        "sla": {
-            "deliveryTime": 33,
-            "lastMileTravel": 1.6,
-            "serviceability": "SERVICEABLE",
-            "slaString": "30-35 mins",
-            "lastMileTravelString": "1.6 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-15 23:30:00",
-            "opened": true
-        },
-        "badges": {
-            "imageBadges": [
-                {
-                    "imageId": "Rxawards/_CATEGORY-Pizza.png",
-                    "description": "Delivery!"
-                }
-            ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {
-                    "badgeObject": [
-                        {
-                            "attributes": {
-                                "description": "Delivery!",
-                                "imageId": "Rxawards/_CATEGORY-Pizza.png"
-                            }
-                        }
-                    ]
-                },
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "60% OFF",
-            "subHeader": "UPTO \u20B9120"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "--"
-            }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "717421",
-        "name": "Paris Panini - Gourmet Sandwiches & Wraps",
-        "cloudinaryImageId": "c27da4b0bab4ca71460bdf082cf58ad4",
-        "locality": "BTM Layout",
-        "areaName": "Koramangala",
-        "costForTwo": "\u20B9500 for two",
-        "cuisines": [
-            "Continental",
-            "Pastas",
-            "Salads",
-            "Desserts",
-            "Snacks",
-            "Fast Food",
-            "French"
-        ],
-        "avgRating": 4.6,
-        "parentId": "21019",
-        "avgRatingString": "4.6",
-        "totalRatingsString": "3.0K+",
-        "sla": {
-            "deliveryTime": 34,
-            "lastMileTravel": 1.6,
-            "serviceability": "SERVICEABLE",
-            "slaString": "30-35 mins",
-            "lastMileTravelString": "1.6 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-15 23:30:00",
-            "opened": true
-        },
-        "badges": {
-            "imageBadges": [
-                {
-                    "imageId": "Rxawards/_CATEGORY-Sandwiches.png",
-                    "description": "Delivery!"
-                }
-            ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {
-                    "badgeObject": [
-                        {
-                            "attributes": {
-                                "description": "Delivery!",
-                                "imageId": "Rxawards/_CATEGORY-Sandwiches.png"
-                            }
-                        }
-                    ]
-                },
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "60% OFF",
-            "subHeader": "UPTO \u20B9120"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "--"
-            }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "77870",
-        "name": "Pasta Street",
-        "cloudinaryImageId": "aecff12704ebe42606524c852f9ab0e4",
-        "locality": "Koramangala",
-        "areaName": "Koramangala",
-        "costForTwo": "\u20B9900 for two",
-        "cuisines": [
-            "Italian",
-            "Pastas",
-            "Pizzas",
-            "Desserts"
-        ],
-        "avgRating": 4.5,
-        "parentId": "2872",
-        "avgRatingString": "4.5",
-        "totalRatingsString": "5.2K+",
-        "sla": {
-            "deliveryTime": 34,
-            "lastMileTravel": 1.8,
-            "serviceability": "SERVICEABLE",
-            "slaString": "30-35 mins",
-            "lastMileTravelString": "1.8 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-15 23:30:00",
-            "opened": true
-        },
-        "badges": {
-            "imageBadges": [
-                {
-                    "imageId": "newg.png",
-                    "description": "Gourmet"
-                }
-            ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {
-                    "badgeObject": [
-                        {
-                            "attributes": {
-                                "description": "Gourmet",
-                                "imageId": "newg.png"
-                            }
-                        }
-                    ]
-                },
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "60% OFF",
-            "subHeader": "UPTO \u20B9120"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "4.4",
-                "ratingCount": "4.1K+"
-            },
-            "source": "GOOGLE",
-            "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "125956",
-        "name": "Glen's Bakehouse",
-        "cloudinaryImageId": "whfviizdgvwg0uwfk8dy",
-        "locality": "Koramangala",
-        "areaName": "Koramangala",
-        "costForTwo": "\u20B9500 for two",
-        "cuisines": [
-            "Desserts",
-            "Bakery",
-            "Beverages",
-            "Continental",
-            "Italian"
-        ],
-        "avgRating": 4.5,
-        "parentId": "3220",
-        "avgRatingString": "4.5",
-        "totalRatingsString": "10K+",
-        "sla": {
-            "deliveryTime": 27,
-            "lastMileTravel": 0.5,
-            "serviceability": "SERVICEABLE",
-            "slaString": "25-30 mins",
-            "lastMileTravelString": "0.5 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-16 01:00:00",
-            "opened": true
-        },
-        "badges": {},
-        "isOpen": true,
-        "aggregatedDiscountInfoV2": {},
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {},
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "4.3",
-                "ratingCount": "4.3K+"
-            },
-            "source": "GOOGLE",
-            "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "70012",
-        "name": "SMOOR",
-        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/11/01f3dd59-1d63-4f0b-a037-dcbef2b90c09_70012.jpg",
-        "locality": "7th Block",
-        "areaName": "Koramangala",
-        "costForTwo": "\u20B9450 for two",
-        "cuisines": [
-            "Asian",
-            "Burgers",
-            "Italian",
-            "Thai",
-            "Sushi",
-            "Salads",
-            "Pastas",
-            "Pizzas",
-            "Mexican",
-            "Chinese"
-        ],
-        "avgRating": 4.6,
-        "parentId": "3506",
-        "avgRatingString": "4.6",
-        "totalRatingsString": "8.2K+",
-        "sla": {
-            "deliveryTime": 36,
-            "lastMileTravel": 1.9,
-            "serviceability": "SERVICEABLE",
-            "slaString": "35-40 mins",
-            "lastMileTravelString": "1.9 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-16 03:00:00",
-            "opened": true
-        },
-        "badges": {
-            "imageBadges": [
-                {
-                    "imageId": "Rxawards/_CATEGORY-Desserts.png",
-                    "description": "Delivery!"
-                }
-            ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {
-                    "badgeObject": [
-                        {
-                            "attributes": {
-                                "description": "Delivery!",
-                                "imageId": "Rxawards/_CATEGORY-Desserts.png"
-                            }
-                        }
-                    ]
-                },
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "50% OFF",
-            "subHeader": "UPTO \u20B9100"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "--"
-            }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "288678",
-        "name": "Home Plate by EatFit",
-        "cloudinaryImageId": "1d578bb732e03c6f591790eb7d2d88e2",
-        "locality": "6th Block",
-        "areaName": "Koramangala",
-        "costForTwo": "\u20B9250 for two",
-        "cuisines": [
-            "North Indian",
-            "Home Food",
-            "Healthy Food",
-            "South Indian",
-            "Rajasthani",
-            "Snacks",
-            "Desserts"
-        ],
-        "avgRating": 4.3,
-        "parentId": "301197",
-        "avgRatingString": "4.3",
-        "totalRatingsString": "1.7K+",
-        "sla": {
-            "deliveryTime": 30,
-            "lastMileTravel": 0.6,
-            "serviceability": "SERVICEABLE",
-            "slaString": "25-30 mins",
-            "lastMileTravelString": "0.6 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-16 01:00:00",
-            "opened": true
-        },
-        "badges": {
-            "textExtendedBadges": [
-                {
-                    "iconId": "guiltfree/GF_Logo_android_3x",
-                    "shortDescription": "options available",
-                    "fontColor": "#7E808C"
-                }
-            ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {},
-                "textBased": {},
-                "textExtendedBadges": {
-                    "badgeObject": [
-                        {
-                            "attributes": {
-                                "description": "",
-                                "fontColor": "#7E808C",
-                                "iconId": "guiltfree/GF_Logo_android_3x",
-                                "shortDescription": "options available"
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "ITEMS",
-            "subHeader": "AT \u20B9129"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "--"
-            }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "8736",
-        "name": "Krispy Kreme",
-        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/10/19/35083e6a-9f5d-46ed-9e53-fea5f9c6fdb5_8736.jpg",
-        "locality": "100 Ft intermediate Ring Road",
-        "areaName": "Koramangala",
-        "costForTwo": "\u20B9170 for two",
-        "cuisines": [
-            "Desserts",
-            "Beverages"
-        ],
-        "avgRating": 4.6,
-        "veg": true,
-        "parentId": "570",
-        "avgRatingString": "4.6",
-        "totalRatingsString": "1.6K+",
-        "sla": {
-            "deliveryTime": 25,
-            "lastMileTravel": 0.6,
-            "serviceability": "SERVICEABLE",
-            "slaString": "25-30 mins",
-            "lastMileTravelString": "0.6 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-15 22:00:00",
-            "opened": true
-        },
-        "badges": {
-            "imageBadges": [
-                {
-                    "imageId": "Green%20Dot%20Awards/Best%20In%20Waffle.png",
-                    "description": "Delivery!"
-                }
-            ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {
-                    "badgeObject": [
-                        {
-                            "attributes": {
-                                "description": "Delivery!",
-                                "imageId": "Green%20Dot%20Awards/Best%20In%20Waffle.png"
-                            }
-                        }
-                    ]
-                },
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "50% OFF",
-            "subHeader": "UPTO \u20B9100"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "--"
-            }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "668624",
-        "name": "Popeyes",
-        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/10/11/89f8d1a4-0d4c-4880-9344-196cbeaa97a3_668624.jpg",
-        "locality": "2nd Stage",
-        "areaName": "BTM Layout",
-        "costForTwo": "\u20B9500 for two",
-        "cuisines": [
-            "Burgers",
-            "Fast Food",
-            "Rolls & Wraps"
-        ],
-        "avgRating": 4.2,
-        "parentId": "397044",
-        "avgRatingString": "4.2",
-        "totalRatingsString": "2.7K+",
-        "sla": {
-            "deliveryTime": 30,
-            "lastMileTravel": 4,
-            "serviceability": "SERVICEABLE",
-            "slaString": "25-30 mins",
-            "lastMileTravelString": "4.0 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-16 01:00:00",
-            "opened": true
-        },
-        "badges": {},
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {},
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "50% OFF",
-            "subHeader": "UPTO \u20B9100"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "3.6",
-                "ratingCount": "186"
-            },
-            "source": "GOOGLE",
-            "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "643665",
-        "name": "WeFit - Protein Bowls, Salads & Sandwiches",
-        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/9/30/b85b2484-a283-4550-8603-cb8f00cc7757_643665.JPG",
-        "locality": "Patel Narayana Reddy Layout",
-        "areaName": "Ejipura",
-        "costForTwo": "\u20B9250 for two",
-        "cuisines": [
-            "Healthy Food",
-            "Salads",
-            "Keto",
-            "Snacks"
-        ],
-        "avgRating": 4.6,
-        "parentId": "355285",
-        "avgRatingString": "4.6",
-        "totalRatingsString": "389",
-        "sla": {
-            "deliveryTime": 25,
-            "lastMileTravel": 0.6,
-            "serviceability": "SERVICEABLE",
-            "slaString": "20-30 mins",
-            "lastMileTravelString": "0.6 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-16 02:00:00",
-            "opened": true
-        },
-        "badges": {
-            "textExtendedBadges": [
-                {
-                    "iconId": "guiltfree/GF_Logo_android_3x",
-                    "shortDescription": "brand",
-                    "fontColor": "#7E808C"
-                }
-            ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {},
-                "textBased": {},
-                "textExtendedBadges": {
-                    "badgeObject": [
-                        {
-                            "attributes": {
-                                "description": "",
-                                "fontColor": "#7E808C",
-                                "iconId": "guiltfree/GF_Logo_android_3x",
-                                "shortDescription": "brand"
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "50% OFF",
-            "subHeader": "UPTO \u20B9100"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "--"
-            }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "622030",
-        "name": "MOJO Pizza - 2X Toppings",
-        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/24/39cb95eb-d5ec-43d5-bd0b-e3f7b65a7d94_622030.JPG",
-        "locality": "Patel Narayana Reddy Layout",
-        "areaName": "Koramangala",
-        "costForTwo": "\u20B9250 for two",
-        "cuisines": [
-            "Pizzas",
-            "Italian",
-            "Fast Food",
-            "Desserts"
-        ],
-        "avgRating": 4.5,
-        "parentId": "11329",
-        "avgRatingString": "4.5",
-        "totalRatingsString": "936",
-        "sla": {
-            "deliveryTime": 25,
-            "lastMileTravel": 0.6,
-            "serviceability": "SERVICEABLE",
-            "slaString": "20-30 mins",
-            "lastMileTravelString": "0.6 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-16 02:00:00",
-            "opened": true
-        },
-        "badges": {
-            "textExtendedBadges": [
-                {
-                    "iconId": "guiltfree/GF_Logo_android_3x",
-                    "shortDescription": "options available",
-                    "fontColor": "#7E808C"
-                }
-            ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {},
-                "textBased": {},
-                "textExtendedBadges": {
-                    "badgeObject": [
-                        {
-                            "attributes": {
-                                "description": "",
-                                "fontColor": "#7E808C",
-                                "iconId": "guiltfree/GF_Logo_android_3x",
-                                "shortDescription": "options available"
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "50% OFF",
-            "subHeader": "UPTO \u20B9100"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "--"
-            }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    },
-    {
-        "id": "263485",
-        "name": "Chaayos Chai+Snacks=Relax",
-        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/dfbcecfc-b380-4648-930a-b9b56b21e781_263485.JPG",
-        "locality": "Kormangala 8th Block",
-        "areaName": "Kormangala",
-        "costForTwo": "\u20B9250 for two",
-        "cuisines": [
-            "Bakery",
-            "Beverages",
-            "Chaat",
-            "Desserts",
-            "Home Food",
-            "Italian",
-            "Maharashtrian",
-            "Snacks",
-            "Street Food",
-            "Sweets"
-        ],
-        "avgRating": 4.5,
-        "parentId": "281782",
-        "avgRatingString": "4.5",
-        "totalRatingsString": "4.5K+",
-        "sla": {
-            "deliveryTime": 28,
-            "lastMileTravel": 0.7,
-            "serviceability": "SERVICEABLE",
-            "slaString": "25-30 mins",
-            "lastMileTravelString": "0.7 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2024-11-16 01:00:00",
-            "opened": true
-        },
-        "badges": {
-            "imageBadges": [
-                {
-                    "imageId": "Rxawards/_CATEGORY-Cafe%20&%20Chai.png",
-                    "description": "Delivery!"
-                }
-            ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {
-                    "badgeObject": [
-                        {
-                            "attributes": {
-                                "description": "Delivery!",
-                                "imageId": "Rxawards/_CATEGORY-Cafe%20&%20Chai.png"
-                            }
-                        }
-                    ]
-                },
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "50% OFF",
-            "subHeader": "UPTO \u20B9100"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {},
-        "externalRatings": {
-            "aggregatedRating": {
-                "rating": "--"
-            }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-    }
-];
-const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "body",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search",
-                children: "Search"
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 1795,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "res-container",
-                children: restaurantArray.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                        resData: restaurant
-                    }, restaurant.id, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 1802,
-                        columnNumber: 21
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 1798,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/App.js",
-        lineNumber: 1794,
-        columnNumber: 9
-    }, undefined);
-};
-_c1 = Body;
+var _body = require("./components/Body");
+var _bodyDefault = parcelHelpers.interopDefault(_body);
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "app",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 1814,
+                lineNumber: 11,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 1815,
+                lineNumber: 12,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 1813,
+        lineNumber: 10,
         columnNumber: 9
     }, undefined);
 };
-_c2 = AppLayout;
+_c = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("rootId"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 1822,
+    lineNumber: 19,
     columnNumber: 13
 }, undefined));
-var _c, _c1, _c2;
-$RefreshReg$(_c, "RestaurantCard");
-$RefreshReg$(_c1, "Body");
-$RefreshReg$(_c2, "AppLayout");
+var _c;
+$RefreshReg$(_c, "AppLayout");
 
   $parcel$ReactRefreshHelpers$f00f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Body":"8yaV8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -28909,7 +27320,45 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../logo.png":"8SfC9"}],"gkKU3":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","../../logo.png":"8SfC9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8SfC9":[function(require,module,exports,__globalThis) {
+module.exports = require("a99d63628a95929b").getBundleURL('aXMci') + "logo.3eb009db.png" + "?" + Date.now();
+
+},{"a99d63628a95929b":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return '/';
+}
+function getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ('' + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"gkKU3":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -29084,44 +27533,1645 @@ function registerExportsForReactRefresh(module1) {
 },{"7422ead32dcc1e6b":"786KC","630b62916b1ae0e7":"4SQxb"}],"4SQxb":[function(require,module,exports,__globalThis) {
 module.exports = JSON.parse("{\"name\":\"react-refresh\",\"description\":\"React is a JavaScript library for building user interfaces.\",\"keywords\":[\"react\"],\"version\":\"0.14.2\",\"homepage\":\"https://reactjs.org/\",\"bugs\":\"https://github.com/facebook/react/issues\",\"license\":\"MIT\",\"files\":[\"LICENSE\",\"README.md\",\"babel.js\",\"runtime.js\",\"cjs/\",\"umd/\"],\"main\":\"runtime.js\",\"exports\":{\".\":\"./runtime.js\",\"./runtime\":\"./runtime.js\",\"./babel\":\"./babel.js\",\"./package.json\":\"./package.json\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/facebook/react.git\",\"directory\":\"packages/react\"},\"engines\":{\"node\":\">=0.10.0\"},\"devDependencies\":{\"react-16-8\":\"npm:react@16.8.0\",\"react-dom-16-8\":\"npm:react-dom@16.8.0\",\"scheduler-0-13\":\"npm:scheduler@0.13.0\"}}");
 
-},{}],"8SfC9":[function(require,module,exports,__globalThis) {
-module.exports = require("a99d63628a95929b").getBundleURL('aXMci') + "logo.3eb009db.png" + "?" + Date.now();
+},{}],"8yaV8":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0606.prelude(module);
 
-},{"a99d63628a95929b":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ('' + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return '/';
-}
-function getBaseURL(url) {
-    return ('' + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ('' + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error('Origin not found');
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _restaurantCard = require("./RestaurantCard");
+var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
+var _constants = require("../utils/constants");
+var _constantsDefault = parcelHelpers.interopDefault(_constants);
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "body",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search",
+                children: "Search"
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-container",
+                children: (0, _constantsDefault.default).map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
+                        resData: restaurant
+                    }, restaurant.id, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 15,
+                        columnNumber: 21
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 11,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Body.js",
+        lineNumber: 7,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Body;
+//exporting or sending out the Body component, wherever it is required.
+exports.default = Body;
+var _c;
+$RefreshReg$(_c, "Body");
 
-},{}]},["aQL8O","7RdVw","2kQhy"], "2kQhy", "parcelRequire94c2")
+  $parcel$ReactRefreshHelpers$0606.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./RestaurantCard":"bMboU","../utils/constants":"hB8jg"}],"bMboU":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$ffb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ffb1.prelude(module);
+
+try {
+//this is a JS object:
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const styleCard = {
+    background: "#FF964F"
+};
+const RestaurantCard = (props)=>{
+    const { resData } = props;
+    //we have used here the inline style of CSS.
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "res-card",
+        style: styleCard,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "res-logo",
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + resData.cloudinaryImageId,
+                alt: "restaurant image"
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 13,
+                columnNumber: 12
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: resData.name
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 14,
+                columnNumber: 12
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: resData.locality
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 15,
+                columnNumber: 12
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: resData.areaName
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 16,
+                columnNumber: 12
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: resData.cuisines.join(", ")
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 17,
+                columnNumber: 12
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    resData.avgRating,
+                    " stars"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 18,
+                columnNumber: 12
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: resData.costForTwo.split(" ")[0]
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 19,
+                columnNumber: 12
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    resData.sla.deliveryTime,
+                    " minutes"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 20,
+                columnNumber: 12
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/RestaurantCard.js",
+        lineNumber: 12,
+        columnNumber: 9
+    }, undefined);
+};
+_c = RestaurantCard;
+exports.default = RestaurantCard;
+var _c;
+$RefreshReg$(_c, "RestaurantCard");
+
+  $parcel$ReactRefreshHelpers$ffb1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hB8jg":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+//this is a hard-coded restaurants data.
+const restaurantArray = [
+    {
+        "id": "10576",
+        "name": "Pizza Hut",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/7/16/87e56c63-b521-4257-96ae-a42229b92009_10576.jpg",
+        "locality": "6th Block",
+        "areaName": "Koramangala",
+        "costForTwo": "\u20B9350 for two",
+        "cuisines": [
+            "Pizzas"
+        ],
+        "avgRating": 4.2,
+        "parentId": "721",
+        "avgRatingString": "4.2",
+        "totalRatingsString": "21K+",
+        "sla": {
+            "deliveryTime": 47,
+            "lastMileTravel": 0.7,
+            "serviceability": "SERVICEABLE",
+            "slaString": "45-50 mins",
+            "lastMileTravelString": "0.7 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-16 04:00:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "ITEMS",
+            "subHeader": "AT \u20B9189"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "4.6",
+                "ratingCount": "3.1K+"
+            },
+            "source": "GOOGLE",
+            "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "671928",
+        "name": "KFC",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/5/a64ce30a-7492-444b-a485-1b7e2804e091_671928.JPG",
+        "locality": "7th Block",
+        "areaName": "Koramangla",
+        "costForTwo": "\u20B9400 for two",
+        "cuisines": [
+            "Burgers",
+            "Fast Food",
+            "Rolls & Wraps"
+        ],
+        "avgRating": 4.3,
+        "parentId": "547",
+        "avgRatingString": "4.3",
+        "totalRatingsString": "3.3K+",
+        "sla": {
+            "deliveryTime": 29,
+            "lastMileTravel": 1.2,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25-30 mins",
+            "lastMileTravelString": "1.2 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-16 02:00:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "40% OFF",
+            "subHeader": "UPTO \u20B980"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "23786",
+        "name": "Domino's Pizza",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/10/24/3e8d32e5-040b-4def-8d6e-88270f3ce792_23786.JPG",
+        "locality": "4th Block",
+        "areaName": "Koramangala",
+        "costForTwo": "\u20B9400 for two",
+        "cuisines": [
+            "Pizzas",
+            "Italian",
+            "Pastas",
+            "Desserts"
+        ],
+        "avgRating": 4.4,
+        "parentId": "2456",
+        "avgRatingString": "4.4",
+        "totalRatingsString": "19K+",
+        "sla": {
+            "deliveryTime": 25,
+            "lastMileTravel": 1.5,
+            "serviceability": "SERVICEABLE",
+            "slaString": "20-25 mins",
+            "lastMileTravelString": "1.5 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-16 02:55:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "Rxawards/_CATEGORY-Pizza.png",
+                    "description": "Delivery!"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "Delivery!",
+                                "imageId": "Rxawards/_CATEGORY-Pizza.png"
+                            }
+                        }
+                    ]
+                },
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "\u20B9175 OFF",
+            "subHeader": "ABOVE \u20B9999",
+            "discountTag": "FLAT DEAL"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "3.4",
+                "ratingCount": "287"
+            },
+            "source": "GOOGLE",
+            "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "63007",
+        "name": "LunchBox - Meals and Thalis",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/10/16/5582708f-8e35-4321-9f03-54133a59be37_63007.jpg",
+        "locality": "Jakkasandra",
+        "areaName": "Hsr Layout 5th Sector",
+        "costForTwo": "\u20B9200 for two",
+        "cuisines": [
+            "Biryani",
+            "North Indian",
+            "Punjabi",
+            "Healthy Food",
+            "Desserts",
+            "Beverages"
+        ],
+        "avgRating": 4.4,
+        "parentId": "4925",
+        "avgRatingString": "4.4",
+        "totalRatingsString": "8.1K+",
+        "sla": {
+            "deliveryTime": 35,
+            "lastMileTravel": 2.2,
+            "serviceability": "SERVICEABLE",
+            "slaString": "30-35 mins",
+            "lastMileTravelString": "2.2 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-15 23:59:00",
+            "opened": true
+        },
+        "badges": {
+            "textExtendedBadges": [
+                {
+                    "iconId": "guiltfree/GF_Logo_android_3x",
+                    "shortDescription": "options available",
+                    "fontColor": "#7E808C"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "",
+                                "fontColor": "#7E808C",
+                                "iconId": "guiltfree/GF_Logo_android_3x",
+                                "shortDescription": "options available"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "ITEMS",
+            "subHeader": "AT \u20B9159"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "23678",
+        "name": "McDonald's",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/9/18/edc568f6-6813-4f2d-a670-911788f1f04f_23678.jpg",
+        "locality": "5th Block",
+        "areaName": "Koramangala",
+        "costForTwo": "\u20B9400 for two",
+        "cuisines": [
+            "Burgers",
+            "Beverages",
+            "Cafe",
+            "Desserts"
+        ],
+        "avgRating": 4.5,
+        "parentId": "630",
+        "avgRatingString": "4.5",
+        "totalRatingsString": "63K+",
+        "sla": {
+            "deliveryTime": 32,
+            "lastMileTravel": 1.2,
+            "serviceability": "SERVICEABLE",
+            "slaString": "30-35 mins",
+            "lastMileTravelString": "1.2 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-16 02:55:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "Rxawards/_CATEGORY-Burger.png",
+                    "description": "Delivery!"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "Delivery!",
+                                "imageId": "Rxawards/_CATEGORY-Burger.png"
+                            }
+                        }
+                    ]
+                },
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "ITEMS",
+            "subHeader": "AT \u20B9199"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "41913",
+        "name": "Chinita Real Mexican Food",
+        "cloudinaryImageId": "29fc772cc06b07a4b018e4971d96c9a3",
+        "locality": "Koramangala",
+        "areaName": "Koramangala",
+        "costForTwo": "\u20B9750 for two",
+        "cuisines": [
+            "Mexican",
+            "Salads",
+            "Desserts",
+            "Beverages"
+        ],
+        "avgRating": 4.6,
+        "parentId": "5064",
+        "avgRatingString": "4.6",
+        "totalRatingsString": "7.3K+",
+        "sla": {
+            "deliveryTime": 30,
+            "lastMileTravel": 0.4,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25-30 mins",
+            "lastMileTravelString": "0.4 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-15 23:00:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "newg.png",
+                    "description": "Gourmet"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "Gourmet",
+                                "imageId": "newg.png"
+                            }
+                        }
+                    ]
+                },
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "50% OFF",
+            "subHeader": "UPTO \u20B9100"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "4.2",
+                "ratingCount": "2.1K+"
+            },
+            "source": "GOOGLE",
+            "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "158855",
+        "name": "Candice's Gourmet Sandwiches & Wraps",
+        "cloudinaryImageId": "d1331113564b015c9d55c48ff48a2553",
+        "locality": "5th Block",
+        "areaName": "Koramangala",
+        "costForTwo": "\u20B9600 for two",
+        "cuisines": [
+            "Salads",
+            "sandwich",
+            "Snacks"
+        ],
+        "avgRating": 4.6,
+        "parentId": "465403",
+        "avgRatingString": "4.6",
+        "totalRatingsString": "3.8K+",
+        "sla": {
+            "deliveryTime": 30,
+            "lastMileTravel": 0.4,
+            "serviceability": "SERVICEABLE",
+            "slaString": "30-35 mins",
+            "lastMileTravelString": "0.4 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-15 23:00:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "newg.png",
+                    "description": "Gourmet"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "Gourmet",
+                                "imageId": "newg.png"
+                            }
+                        }
+                    ]
+                },
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "60% OFF",
+            "subHeader": "UPTO \u20B9120"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "11211",
+        "name": "Taco Bell",
+        "cloudinaryImageId": "d3b3db238b6448c3f297c851e9d0b96b",
+        "locality": "Koramangala",
+        "areaName": "Koramangala",
+        "costForTwo": "\u20B9300 for two",
+        "cuisines": [
+            "Mexican",
+            "Fast Food",
+            "Snacks"
+        ],
+        "avgRating": 4.4,
+        "parentId": "1557",
+        "avgRatingString": "4.4",
+        "totalRatingsString": "25K+",
+        "sla": {
+            "deliveryTime": 28,
+            "lastMileTravel": 1.6,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25-30 mins",
+            "lastMileTravelString": "1.6 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-16 01:00:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "ITEMS",
+            "subHeader": "AT \u20B9149"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "4.2",
+                "ratingCount": "5.8K+"
+            },
+            "source": "GOOGLE",
+            "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "50467",
+        "name": "Bakingo",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/7/9c87f879-5296-41e2-b0de-0b47e88a4569_50467.JPG",
+        "locality": "1st Block",
+        "areaName": "Koramangala",
+        "costForTwo": "\u20B9300 for two",
+        "cuisines": [
+            "Bakery",
+            "Desserts",
+            "Beverages",
+            "Snacks"
+        ],
+        "avgRating": 4.5,
+        "parentId": "3818",
+        "avgRatingString": "4.5",
+        "totalRatingsString": "11K+",
+        "sla": {
+            "deliveryTime": 36,
+            "lastMileTravel": 2.7,
+            "serviceability": "SERVICEABLE",
+            "slaString": "35-40 mins",
+            "lastMileTravelString": "2.7 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-16 01:00:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "50% OFF",
+            "subHeader": "UPTO \u20B9100"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "718430",
+        "name": "The Pizza Bakery - Wood Fired Sourdough",
+        "cloudinaryImageId": "0335dd45be555d0a4187255e57d2ca88",
+        "locality": "BTM Layout",
+        "areaName": "Koramangala",
+        "costForTwo": "\u20B9700 for two",
+        "cuisines": [
+            "Pizzas",
+            "Pastas",
+            "Italian",
+            "Desserts",
+            "Continental",
+            "Beverages"
+        ],
+        "avgRating": 4.4,
+        "parentId": "522292",
+        "avgRatingString": "4.4",
+        "totalRatingsString": "1.7K+",
+        "sla": {
+            "deliveryTime": 33,
+            "lastMileTravel": 1.6,
+            "serviceability": "SERVICEABLE",
+            "slaString": "30-35 mins",
+            "lastMileTravelString": "1.6 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-15 23:30:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "Rxawards/_CATEGORY-Pizza.png",
+                    "description": "Delivery!"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "Delivery!",
+                                "imageId": "Rxawards/_CATEGORY-Pizza.png"
+                            }
+                        }
+                    ]
+                },
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "60% OFF",
+            "subHeader": "UPTO \u20B9120"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "717421",
+        "name": "Paris Panini - Gourmet Sandwiches & Wraps",
+        "cloudinaryImageId": "c27da4b0bab4ca71460bdf082cf58ad4",
+        "locality": "BTM Layout",
+        "areaName": "Koramangala",
+        "costForTwo": "\u20B9500 for two",
+        "cuisines": [
+            "Continental",
+            "Pastas",
+            "Salads",
+            "Desserts",
+            "Snacks",
+            "Fast Food",
+            "French"
+        ],
+        "avgRating": 4.6,
+        "parentId": "21019",
+        "avgRatingString": "4.6",
+        "totalRatingsString": "3.0K+",
+        "sla": {
+            "deliveryTime": 34,
+            "lastMileTravel": 1.6,
+            "serviceability": "SERVICEABLE",
+            "slaString": "30-35 mins",
+            "lastMileTravelString": "1.6 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-15 23:30:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "Rxawards/_CATEGORY-Sandwiches.png",
+                    "description": "Delivery!"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "Delivery!",
+                                "imageId": "Rxawards/_CATEGORY-Sandwiches.png"
+                            }
+                        }
+                    ]
+                },
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "60% OFF",
+            "subHeader": "UPTO \u20B9120"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "77870",
+        "name": "Pasta Street",
+        "cloudinaryImageId": "aecff12704ebe42606524c852f9ab0e4",
+        "locality": "Koramangala",
+        "areaName": "Koramangala",
+        "costForTwo": "\u20B9900 for two",
+        "cuisines": [
+            "Italian",
+            "Pastas",
+            "Pizzas",
+            "Desserts"
+        ],
+        "avgRating": 4.5,
+        "parentId": "2872",
+        "avgRatingString": "4.5",
+        "totalRatingsString": "5.2K+",
+        "sla": {
+            "deliveryTime": 34,
+            "lastMileTravel": 1.8,
+            "serviceability": "SERVICEABLE",
+            "slaString": "30-35 mins",
+            "lastMileTravelString": "1.8 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-15 23:30:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "newg.png",
+                    "description": "Gourmet"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "Gourmet",
+                                "imageId": "newg.png"
+                            }
+                        }
+                    ]
+                },
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "60% OFF",
+            "subHeader": "UPTO \u20B9120"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "4.4",
+                "ratingCount": "4.1K+"
+            },
+            "source": "GOOGLE",
+            "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "125956",
+        "name": "Glen's Bakehouse",
+        "cloudinaryImageId": "whfviizdgvwg0uwfk8dy",
+        "locality": "Koramangala",
+        "areaName": "Koramangala",
+        "costForTwo": "\u20B9500 for two",
+        "cuisines": [
+            "Desserts",
+            "Bakery",
+            "Beverages",
+            "Continental",
+            "Italian"
+        ],
+        "avgRating": 4.5,
+        "parentId": "3220",
+        "avgRatingString": "4.5",
+        "totalRatingsString": "10K+",
+        "sla": {
+            "deliveryTime": 27,
+            "lastMileTravel": 0.5,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25-30 mins",
+            "lastMileTravelString": "0.5 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-16 01:00:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "aggregatedDiscountInfoV2": {},
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "4.3",
+                "ratingCount": "4.3K+"
+            },
+            "source": "GOOGLE",
+            "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "70012",
+        "name": "SMOOR",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/11/01f3dd59-1d63-4f0b-a037-dcbef2b90c09_70012.jpg",
+        "locality": "7th Block",
+        "areaName": "Koramangala",
+        "costForTwo": "\u20B9450 for two",
+        "cuisines": [
+            "Asian",
+            "Burgers",
+            "Italian",
+            "Thai",
+            "Sushi",
+            "Salads",
+            "Pastas",
+            "Pizzas",
+            "Mexican",
+            "Chinese"
+        ],
+        "avgRating": 4.6,
+        "parentId": "3506",
+        "avgRatingString": "4.6",
+        "totalRatingsString": "8.2K+",
+        "sla": {
+            "deliveryTime": 36,
+            "lastMileTravel": 1.9,
+            "serviceability": "SERVICEABLE",
+            "slaString": "35-40 mins",
+            "lastMileTravelString": "1.9 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-16 03:00:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "Rxawards/_CATEGORY-Desserts.png",
+                    "description": "Delivery!"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "Delivery!",
+                                "imageId": "Rxawards/_CATEGORY-Desserts.png"
+                            }
+                        }
+                    ]
+                },
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "50% OFF",
+            "subHeader": "UPTO \u20B9100"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "288678",
+        "name": "Home Plate by EatFit",
+        "cloudinaryImageId": "1d578bb732e03c6f591790eb7d2d88e2",
+        "locality": "6th Block",
+        "areaName": "Koramangala",
+        "costForTwo": "\u20B9250 for two",
+        "cuisines": [
+            "North Indian",
+            "Home Food",
+            "Healthy Food",
+            "South Indian",
+            "Rajasthani",
+            "Snacks",
+            "Desserts"
+        ],
+        "avgRating": 4.3,
+        "parentId": "301197",
+        "avgRatingString": "4.3",
+        "totalRatingsString": "1.7K+",
+        "sla": {
+            "deliveryTime": 30,
+            "lastMileTravel": 0.6,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25-30 mins",
+            "lastMileTravelString": "0.6 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-16 01:00:00",
+            "opened": true
+        },
+        "badges": {
+            "textExtendedBadges": [
+                {
+                    "iconId": "guiltfree/GF_Logo_android_3x",
+                    "shortDescription": "options available",
+                    "fontColor": "#7E808C"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "",
+                                "fontColor": "#7E808C",
+                                "iconId": "guiltfree/GF_Logo_android_3x",
+                                "shortDescription": "options available"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "ITEMS",
+            "subHeader": "AT \u20B9129"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "8736",
+        "name": "Krispy Kreme",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/10/19/35083e6a-9f5d-46ed-9e53-fea5f9c6fdb5_8736.jpg",
+        "locality": "100 Ft intermediate Ring Road",
+        "areaName": "Koramangala",
+        "costForTwo": "\u20B9170 for two",
+        "cuisines": [
+            "Desserts",
+            "Beverages"
+        ],
+        "avgRating": 4.6,
+        "veg": true,
+        "parentId": "570",
+        "avgRatingString": "4.6",
+        "totalRatingsString": "1.6K+",
+        "sla": {
+            "deliveryTime": 25,
+            "lastMileTravel": 0.6,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25-30 mins",
+            "lastMileTravelString": "0.6 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-15 22:00:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "Green%20Dot%20Awards/Best%20In%20Waffle.png",
+                    "description": "Delivery!"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "Delivery!",
+                                "imageId": "Green%20Dot%20Awards/Best%20In%20Waffle.png"
+                            }
+                        }
+                    ]
+                },
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "50% OFF",
+            "subHeader": "UPTO \u20B9100"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "668624",
+        "name": "Popeyes",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/10/11/89f8d1a4-0d4c-4880-9344-196cbeaa97a3_668624.jpg",
+        "locality": "2nd Stage",
+        "areaName": "BTM Layout",
+        "costForTwo": "\u20B9500 for two",
+        "cuisines": [
+            "Burgers",
+            "Fast Food",
+            "Rolls & Wraps"
+        ],
+        "avgRating": 4.2,
+        "parentId": "397044",
+        "avgRatingString": "4.2",
+        "totalRatingsString": "2.7K+",
+        "sla": {
+            "deliveryTime": 30,
+            "lastMileTravel": 4,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25-30 mins",
+            "lastMileTravelString": "4.0 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-16 01:00:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "50% OFF",
+            "subHeader": "UPTO \u20B9100"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "3.6",
+                "ratingCount": "186"
+            },
+            "source": "GOOGLE",
+            "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "643665",
+        "name": "WeFit - Protein Bowls, Salads & Sandwiches",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/9/30/b85b2484-a283-4550-8603-cb8f00cc7757_643665.JPG",
+        "locality": "Patel Narayana Reddy Layout",
+        "areaName": "Ejipura",
+        "costForTwo": "\u20B9250 for two",
+        "cuisines": [
+            "Healthy Food",
+            "Salads",
+            "Keto",
+            "Snacks"
+        ],
+        "avgRating": 4.6,
+        "parentId": "355285",
+        "avgRatingString": "4.6",
+        "totalRatingsString": "389",
+        "sla": {
+            "deliveryTime": 25,
+            "lastMileTravel": 0.6,
+            "serviceability": "SERVICEABLE",
+            "slaString": "20-30 mins",
+            "lastMileTravelString": "0.6 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-16 02:00:00",
+            "opened": true
+        },
+        "badges": {
+            "textExtendedBadges": [
+                {
+                    "iconId": "guiltfree/GF_Logo_android_3x",
+                    "shortDescription": "brand",
+                    "fontColor": "#7E808C"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "",
+                                "fontColor": "#7E808C",
+                                "iconId": "guiltfree/GF_Logo_android_3x",
+                                "shortDescription": "brand"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "50% OFF",
+            "subHeader": "UPTO \u20B9100"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "622030",
+        "name": "MOJO Pizza - 2X Toppings",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/24/39cb95eb-d5ec-43d5-bd0b-e3f7b65a7d94_622030.JPG",
+        "locality": "Patel Narayana Reddy Layout",
+        "areaName": "Koramangala",
+        "costForTwo": "\u20B9250 for two",
+        "cuisines": [
+            "Pizzas",
+            "Italian",
+            "Fast Food",
+            "Desserts"
+        ],
+        "avgRating": 4.5,
+        "parentId": "11329",
+        "avgRatingString": "4.5",
+        "totalRatingsString": "936",
+        "sla": {
+            "deliveryTime": 25,
+            "lastMileTravel": 0.6,
+            "serviceability": "SERVICEABLE",
+            "slaString": "20-30 mins",
+            "lastMileTravelString": "0.6 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-16 02:00:00",
+            "opened": true
+        },
+        "badges": {
+            "textExtendedBadges": [
+                {
+                    "iconId": "guiltfree/GF_Logo_android_3x",
+                    "shortDescription": "options available",
+                    "fontColor": "#7E808C"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "",
+                                "fontColor": "#7E808C",
+                                "iconId": "guiltfree/GF_Logo_android_3x",
+                                "shortDescription": "options available"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "50% OFF",
+            "subHeader": "UPTO \u20B9100"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+        "id": "263485",
+        "name": "Chaayos Chai+Snacks=Relax",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/dfbcecfc-b380-4648-930a-b9b56b21e781_263485.JPG",
+        "locality": "Kormangala 8th Block",
+        "areaName": "Kormangala",
+        "costForTwo": "\u20B9250 for two",
+        "cuisines": [
+            "Bakery",
+            "Beverages",
+            "Chaat",
+            "Desserts",
+            "Home Food",
+            "Italian",
+            "Maharashtrian",
+            "Snacks",
+            "Street Food",
+            "Sweets"
+        ],
+        "avgRating": 4.5,
+        "parentId": "281782",
+        "avgRatingString": "4.5",
+        "totalRatingsString": "4.5K+",
+        "sla": {
+            "deliveryTime": 28,
+            "lastMileTravel": 0.7,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25-30 mins",
+            "lastMileTravelString": "0.7 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-16 01:00:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "Rxawards/_CATEGORY-Cafe%20&%20Chai.png",
+                    "description": "Delivery!"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "Delivery!",
+                                "imageId": "Rxawards/_CATEGORY-Cafe%20&%20Chai.png"
+                            }
+                        }
+                    ]
+                },
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "50% OFF",
+            "subHeader": "UPTO \u20B9100"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    }
+];
+exports.default = restaurantArray;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["aQL8O","7RdVw","2kQhy"], "2kQhy", "parcelRequire94c2")
 
 //# sourceMappingURL=index.7271efb6.js.map
