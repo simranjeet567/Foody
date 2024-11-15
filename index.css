@@ -2,18 +2,40 @@
     display: flex;
     justify-content: space-between;
     border: 1px solid orange;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 10px;
 }
 
 .logo {
     width: 100px;
-    padding-left: 50px;
     cursor: pointer;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.cart-logo{
+    width: 45px;
+}
+.cart-logo:hover{
+    border: 1px solid orange;
+}
 
 .nav-items > ul {
     display: flex;
-    padding-right: 50px;
+    padding-right: 20px;
     font-size: 18px;
     list-style-type: none;
 }
@@ -21,24 +43,39 @@
 .nav-items > ul > li {
     padding: 10px;
     margin: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .home:hover{
     cursor: pointer;
-    border: 1px solid orange;
+    border: 0.1px solid orange;
 }
 
 .aboutus:hover{
     cursor: pointer;
-    border: 1px solid orange;
+    border: 0.1px solid orange;
 }
 .contactus:hover{
     cursor: pointer;
-    border: 1px solid orange;
+    border: 0.1px solid orange;
 }
 .cart:hover{
     cursor: pointer;
     border: 1px solid orange;
+}
+
+.foodie-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 4px;
+    color: orange;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.foodie-text:hover{
+    border:1px solid orange;
 }
 
 
@@ -70,4 +107,13 @@
 .res-logo {
     width: 100%;
     height: 40%;
+}
+
+.filter-btn{
+    margin: 15px;
+    cursor: pointer;
+}
+
+.body{
+    padding-top: 30px;
 }

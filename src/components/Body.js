@@ -5,9 +5,17 @@ import { restaurantArray } from "../utils/constants";
 const Body = () => {
     return (
         <div className='body'>
-            <div className='search'>
-                Search
-            </div>
+            {/* <div className='filter'>
+                <button 
+                  className="filter-btn" 
+                  onClick={() => {
+                    restaurantArray = restaurantArray.filter(
+                        (resData) => resData.avgRating > 4.5 
+                    );
+                  }}>
+                    Top Rated Restaurants
+                </button>
+            </div> */}
             <div className='res-container'>
                 
                 {
