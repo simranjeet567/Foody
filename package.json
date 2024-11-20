@@ -2,8 +2,13 @@
   "name": "foody",
   "version": "1.0.0",
   "description": "it's a food application.",
+  "homepage": "https://github.com/simranjeet567/Foody",
   "scripts": {
-    "test": "jest"
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "simranjeet singh",
   "license": "ISC",
@@ -13,6 +18,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "process": "^0.11.10"
   }
 }
