@@ -12,6 +12,16 @@
   font-size: large;
   font-weight: bold;
   display: flex;
+  position: relative;
+}
+
+.footer:before {
+  content: "";
+  background-color: orange;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 0;
 }
 
 .logo {
@@ -73,12 +83,12 @@
 
 .res-container {
   flex-wrap: wrap;
+  justify-content: space-evenly;
   display: flex;
 }
 
 .res-card {
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 250px;
   margin: 20px;
   padding: 5px;
