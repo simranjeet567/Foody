@@ -2485,14 +2485,14 @@ process.umask = function() {
     return 0;
 };
 
-},{}],"7RdVw":[function(require,module,exports,__globalThis) {
+},{}],"61Gmo":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "7fb4cd117271efb6";
+module.bundle.HMR_BUNDLE_ID = "f0c9f0f3f482b72b";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -2927,11 +2927,11 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"2kQhy":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$f00f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"e9Zfo":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$2430 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$f00f.prelude(module);
+$parcel$ReactRefreshHelpers$2430.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -2951,23 +2951,23 @@ const AppLayout = ()=>{
         className: "app",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                fileName: "src/App.js",
+                fileName: "src/App.jsx",
                 lineNumber: 12,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
-                fileName: "src/App.js",
+                fileName: "src/App.jsx",
                 lineNumber: 13,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
-                fileName: "src/App.js",
+                fileName: "src/App.jsx",
                 lineNumber: 14,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/App.js",
+        fileName: "src/App.jsx",
         lineNumber: 11,
         columnNumber: 9
     }, undefined);
@@ -2975,14 +2975,14 @@ const AppLayout = ()=>{
 _c = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("rootId"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
-    fileName: "src/App.js",
+    fileName: "src/App.jsx",
     lineNumber: 20,
     columnNumber: 13
 }, undefined));
 var _c;
 $RefreshReg$(_c, "AppLayout");
 
-  $parcel$ReactRefreshHelpers$f00f.postlude(module);
+  $parcel$ReactRefreshHelpers$2430.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
@@ -27346,10 +27346,10 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../utils/logo.png":"3P00G","../utils/shopping-cart-icon.jpg":"lFlXK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3P00G":[function(require,module,exports,__globalThis) {
-module.exports = require("b685b47e983f1b97").getBundleURL('aXMci') + "logo.cab2f9ab.png" + "?" + Date.now();
+},{"react/jsx-dev-runtime":"iTorj","../utils/logo.png":"bTJ3y","../utils/shopping-cart-icon.jpg":"e7EZN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bTJ3y":[function(require,module,exports,__globalThis) {
+module.exports = require("3125266d9b250d3c").getBundleURL('kFIdX') + "logo.cab2f9ab.png" + "?" + Date.now();
 
-},{"b685b47e983f1b97":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
+},{"3125266d9b250d3c":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -27384,10 +27384,10 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"lFlXK":[function(require,module,exports,__globalThis) {
-module.exports = require("e4aa3d419fc5a3d7").getBundleURL('aXMci') + "shopping-cart-icon.3005dee4.jpg" + "?" + Date.now();
+},{}],"e7EZN":[function(require,module,exports,__globalThis) {
+module.exports = require("9717c9f5dbdce4b9").getBundleURL('kFIdX') + "shopping-cart-icon.3005dee4.jpg" + "?" + Date.now();
 
-},{"e4aa3d419fc5a3d7":"lgJ39"}],"gkKU3":[function(require,module,exports,__globalThis) {
+},{"9717c9f5dbdce4b9":"lgJ39"}],"gkKU3":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -29222,6 +29222,6 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","7RdVw","2kQhy"], "2kQhy", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","61Gmo","e9Zfo"], "e9Zfo", "parcelRequire94c2")
 
-//# sourceMappingURL=index.7271efb6.js.map
+//# sourceMappingURL=index.f482b72b.js.map
